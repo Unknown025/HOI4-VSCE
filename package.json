@@ -3,6 +3,11 @@
     "displayName": "HOI4 Mod Support",
     "description": "Adds syntax highlighting for Hearts Of Iron 4 mod files.",
     "version": "0.0.1",
+    "publisher": "Unknown025",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Unknown025/HOI4-VSCE.git"
+    },
     "engines": {
         "vscode": "^1.58.0"
     },
