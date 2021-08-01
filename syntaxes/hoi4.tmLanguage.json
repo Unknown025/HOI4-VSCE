@@ -3,18 +3,68 @@
 	"name": "HOI4",
 	"patterns": [
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#keywords"
+		},
+		{
+			"include": "#assignment"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#numbers"
 		},
 		{
 			"include": "#strings"
 		}
 	],
 	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.hoi4",
+					"match": "(#.*)\\b"
+				}
+			]
+		},
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.hoi4",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.hoi4",
+					"match": "\\b(NO|AND|OR|x|y)\\b"
+				}
+			]
+		},
+		"assignment": {
+			"patterns": [
+				{
+					"name": "constant.character.hoi4",
+					"match": "="
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.name.hoi4",
+					"match": "([a-zA-Z]+(?:_[a-zA-Z]+)+)"
+				},
+				{
+					"name": "variable.parameter.hoi4",
+					"match": "([A-Z]+\\b.)+([A-Z]+)"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.hoi4",
+					"match": "\\d"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.hoi4",
