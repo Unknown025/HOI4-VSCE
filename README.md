@@ -6,4 +6,4 @@ Syntax highlighting for your mod files.
 
 ## Release Notes
 
-Release nots are available in the [changelog](CHANGELOG.md)
+Release notes are available in the [changelog](CHANGELOG.md)
