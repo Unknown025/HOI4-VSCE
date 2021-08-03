@@ -26,7 +26,7 @@
 			"patterns": [
 				{
 					"name": "comment.line.hoi4",
-					"match": "(#.*)\\b"
+					"match": "(#.*)"
 				}
 			]
 		},
@@ -34,7 +34,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.hoi4",
-					"match": "\\b(NOT|AND|OR|x|y)\\b"
+					"match": "\\b(if|if-else|else|limit|NOT|AND|OR|x|y)\\b"
 				}
 			]
 		},
@@ -49,10 +49,6 @@
 		"variables": {
 			"patterns": [
 				{
-					"name": "variable.name.hoi4",
-					"match": "([a-zA-Z]+(?:_[a-zA-Z]+)+)"
-				},
-				{
 					"name": "variable.parameter.hoi4",
 					"match": "([A-Z]+\\b.)+([A-Z]+)"
 				}
@@ -62,7 +58,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.hoi4",
-					"match": "\\d"
+					"match": "\\b\\d+"
 				}
 			]
 		},
