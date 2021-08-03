@@ -34,7 +34,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.hoi4",
-					"match": "\\b(NO|AND|OR|x|y)\\b"
+					"match": "\\b(NOT|AND|OR|x|y)\\b"
 				}
 			]
 		},
